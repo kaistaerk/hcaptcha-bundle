@@ -2,6 +2,6 @@
 <div class="form-group">
   <div class="h-captcha" data-sitekey="{{ hcaptcha_site_key }}">
   </div>
-  <script src="https://hcaptcha.com/1/api.js" async defer></script>
+  <script src="https://hcaptcha.com/1/api.js?hl={{ default_language|default('en') }}" async defer></script>
 </div>
 {% endblock %}
