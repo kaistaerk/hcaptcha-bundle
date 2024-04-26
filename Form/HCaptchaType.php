@@ -65,6 +65,7 @@ class HCaptchaType extends AbstractType
     {
         // This is the variable that Twig can use to display the hCaptcha widget
         $view->vars['hcaptcha_site_key'] = $options['hcaptcha_site_key'];
+        $view->vars['hcaptcha_default_language'] = $options['hcaptcha_default_language'];
     }
 
     public function getBlockPrefix(): string
@@ -109,5 +110,6 @@ class HCaptchaType extends AbstractType
             $resolver->setDefault('hcaptcha_site_key', $this->hcaptchaSiteKey);
         }
         $resolver->setRequired('hcaptcha_site_key');
+        $resolver->setDefault('hcaptcha_default_language', 'de');
     }
 }

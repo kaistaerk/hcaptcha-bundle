@@ -1,5 +1,5 @@
 {
-    "name": "meteo-concept/hcaptcha-bundle",
+    "name": "kaistaerk/hcaptcha-bundle",
     "description": "A Symfony bundle to use hCaptcha in forms",
     "type": "symfony-bundle",
     "require": {
